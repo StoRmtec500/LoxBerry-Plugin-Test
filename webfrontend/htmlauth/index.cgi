@@ -28,7 +28,7 @@ my $lat;
 #############################
 my $myFolder = "$lbpconfigdir";
 
-my $pcfg = new Config::Simple('$lbpconfigdir/solcast.cfg');
+my $pcfg = new Config::Simple("$lbpconfigdir/solcast.cfg");
 print STDERR Dumper($pcfg);
 print STDERR "Hallo"; 
 
