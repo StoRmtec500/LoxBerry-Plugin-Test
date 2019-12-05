@@ -8,6 +8,8 @@ use HTML::Template;
 use CGI;
 use warnings;
 use strict;
+use Data::Dumper;
+
 
 my $version = "0.1.1";
 
@@ -26,8 +28,9 @@ my $lat;
 #############################
 my $myFolder = "$lbpconfigdir";
 
-my $pcfg = new Config::Simple('$myFolder/solcast.cfg');
-
+my $pcfg = new Config::Simple('$lbpconfigdir/solcast.cfg');
+print STDERR Dumper($pcfg);
+print STDERR "Hallo"; 
 
 
 ##########################################################################
